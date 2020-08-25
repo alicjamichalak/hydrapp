@@ -160,13 +160,19 @@
       media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
     />
   </head>
-  <body class="hydrapp">
-    <main class="hydrapp__main">
-      <h1 class="hydrapp__title">hydrapp</h1>
-      <img class="hydrapp__img" src="../assets/img/logo.svg" alt="Glass with water" />
-      <p class="hydrapp__number hydrapp__number--js"></p>
-      <button class="hydrapp__button--add button--add--js">dodaj szklankę</button>
-      <p class="hydrapp__button--delete button--delete--js">usuń szklankę</p>
+  <body>
+    <main class="app">
+      <h1 class="app__title">hydrapp</h1>
+      <div class="glass">
+        <img
+          class="glass__img"
+          src="../assets/img/logo.svg"
+          alt="Glass with water"
+        />
+        <span class="glass__counter glass__counter--js">0</span>
+      </div>
+      <button class="button--add button--add--js">dodaj szklankę</button>
+      <button class="button--delete button--delete--js">usuń szklankę</button>
     </main>
   </body>
 </html>

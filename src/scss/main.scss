@@ -1,41 +1,27 @@
-@import "~normalize.css";
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import "modules/app.scss";
+@import "modules/buttons.scss";
+@import "modules/glass.scss";
 
-@import "_variables";
-@import "modules/hello.scss";
+@import "~normalize.css";
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *:before,
 *:after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
-  background: $wtf;
+  background: #3767ad;
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  font-family: Roboto;
-}
-
-.hydrapp{
-  &__main{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  }
-
-  &__title{
-    align-self: center;
-  }
-
-  &__button--delete{
-    align-self: center;
-  }
+  font-family: "Roboto", sans-serif;
 }
