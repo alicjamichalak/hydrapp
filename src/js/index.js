@@ -1,5 +1,8 @@
 import "../scss/main.scss";
 
+import { registerSW } from "./pwa.js";
+registerSW();
+
 const glassCounter = document.querySelector(".glass__counter--js");
 const addGlassBtn = document.querySelector(".button--add--js");
 const deleteGlassBtn = document.querySelector(".button--delete--js");
@@ -9,10 +12,10 @@ let currentGlassCounter = 0;
 
 const localStorageValue = localStorage.getItem(key);
 
-if(localStorageValue){
+if (localStorageValue) {
   currentGlassCounter = localStorageValue;
-}else{
-  localStorage.setItem(key,0);
+} else {
+  localStorage.setItem(key, 0);
 }
 
 glassCounter.innerHTML = currentGlassCounter;
@@ -20,7 +23,7 @@ glassCounter.innerHTML = currentGlassCounter;
 addGlassBtn.addEventListener("click", () => {
   currentGlassCounter++;
   glassCounter.innerHTML = currentGlassCounter;
-  localStorage.setItem(key,currentGlassCounter);
+  localStorage.setItem(key, currentGlassCounter);
 });
 
 deleteGlassBtn.addEventListener("click", () => {
@@ -28,5 +31,5 @@ deleteGlassBtn.addEventListener("click", () => {
     currentGlassCounter--;
   }
   glassCounter.innerHTML = currentGlassCounter;
-  localStorage.setItem(key,currentGlassCounter);
+  localStorage.setItem(key, currentGlassCounter);
 });
