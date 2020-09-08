@@ -1,4 +1,4 @@
-![cover](https://alicjamichalak.github.io/hydrapp/public/og.png)
+![cover](https://github.com/alicjamichalak/hydrapp/blob/master/public/og.png?raw=true)
 
 # Hydrapp
 
